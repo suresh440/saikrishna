@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Business Card | Marketing Manager</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #eef5fb;
+    }
+
+    .card {
+      max-width: 420px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(13,110,253,0.15);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      padding: 30px 20px 70px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      position: absolute;
+      left: 50%;
+      bottom: -55px;
+      transform: translateX(-50%);
+      object-fit: cover;
+      background: #fff;
+    }
+
+    .content {
+      padding: 70px 20px 25px;
+      text-align: center;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1f2d3d;
+    }
+
+    .designation {
+      font-size: 15px;
+      color: #0d6efd;
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .company {
+      font-size: 14px;
+      color: #5f6c7b;
+      margin: 8px 0 20px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0a58ca;
+      margin: 22px 0 10px;
+      text-align: left;
+    }
+
+    .cta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 13px 10px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    /* Contact buttons */
+    .call { background: #198754; }
+    .whatsapp { background: #25d366; }
+    .email { background: #dc3545; }
+    .save { background: #6f42c1; }
+
+    /* Business buttons */
+    .full {
+      grid-column: span 2;
+      background: #0d6efd;
+    }
+
+    /* Social buttons */
+    .instagram { background: #e1306c; }
+    .youtube { background: #ff0000; }
+    .linkedin { background: #0077b5; }
+    .facebook { background: #1877f2; }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6c757d;
+      padding: 18px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <h2>Marketing Manager</h2>
+      <img
+        src="https://scontent-del3-1.xx.fbcdn.net/v/t39.30808-6/229435930_3123172847916931_7399050728161061573_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ZaStw6wTsQwQ7kNvwGtYEK9&_nc_oc=AdmgW4o-zRsx6LWQuiaXDVo4CTi3OkWWYQNWIEYH5ImWohSyawCZJXZkns_ckPNx22Q&_nc_zt=23&_nc_ht=scontent-del3-1.xx&_nc_gid=1zWa0Vx6M8NmRe9n1IBi3Q&oh=00_AfsO0nKegYDy9llYfvnZmhys4QFFP-ptG8l6yh4i9F5c3A&oe=69854201"
+        alt="Profile"
+        class="profile-img">
+    </div>
+
+    <div class="content">
+      <div class="name">K Sai Krishna</div>
+      <div class="designation">Marketing Manager</div>
+      <div class="company">Corona Pharma Pvt. Ltd.</div>
+
+      <!-- Contact CTAs -->
+      <div class="section-title">Contact</div>
+      <div class="cta">
+        <a href="tel:+917207900631" class="btn call">📞 Call</a>
+        <a href="https://wa.me/917207900631" class="btn whatsapp">💬 WhatsApp</a>
+        <a href="mailto:krishnakotha076@gmail.com" class="btn email">✉️ Email</a>
+        <a href="contact.vcf" class="btn save">💾 Save Contact</a>
+      </div>
+
+      <!-- Business CTAs -->
+      <div class="section-title">Business</div>
+      <div class="cta">
+        <a href="https://drive.google.com/" class="btn full">📂 Product Brochure</a>
+        <a href="https://maps.google.com/" class="btn full">📍 Visit Location</a>
+      </div>
+
+      <!-- Social Media CTAs -->
+      <div class="section-title">Social Connect</div>
+      <div class="cta">
+        <a href="https://instagram.com/" class="btn instagram">📸 Instagram</a>
+        <a href="https://youtube.com/@krish-0005" class="btn youtube">▶️ YouTube</a>
+        <a href="https://linkedin.com/" class="btn linkedin">💼 LinkedIn</a>
+        <a href="https://facebook.com/" class="btn facebook">📘 Facebook</a>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Scan QR • Save Contact • Connect Instantly
+    </div>
+  </div>
+
+</body>
+</html>

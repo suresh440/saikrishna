@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Business Card | Medical Rep</title>
+
+<style>
+:root {
+  --primary: #0d6efd;
+  --secondary: #0a58ca;
+  --bg: #eaf2fb;
+  --glass: rgba(255,255,255,0.75);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #eaf2fb, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  border-radius: 26px;
+  box-shadow: 0 30px 80px rgba(13,110,253,0.25);
+  overflow: hidden;
+  animation: cardIn 1s ease forwards;
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(40px) scale(.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* HEADER */
+.header {
+  height: 160px;
+  background: linear-gradient(270deg, var(--primary), var(--secondary));
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  position: relative;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.profile {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* CONTENT */
+.content {
+  padding: 80px 22px 26px;
+  text-align: center;
+}
+
+.name {
+  font-size: 23px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.role {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+.company {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* SECTION */
+.section {
+  text-align: left;
+  margin-top: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0a58ca;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+/* CTA GRID */
+.grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+
+
+/* BUTTONS */
+.btn {
+  padding: 14px 10px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  transition: all .25s ease;
+}
+
+.btn:active {
+  transform: scale(.96);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0,0,0,.28);
+}
+
+/* COLORS */
+.call { background: linear-gradient(135deg,#16a34a,#22c55e); animation: pulse 2.5s infinite; }
+.whatsapp { background: linear-gradient(135deg,#22c55e,#25d366); }
+.email { background: linear-gradient(135deg,#ef4444,#dc2626); }
+.save { background: linear-gradient(135deg,#7c3aed,#6d28d9); }
+
+.full {
+  grid-column: span 2;
+  background: linear-gradient(135deg,var(--primary),var(--secondary));
+}
+
+.instagram { background: linear-gradient(135deg,#e1306c,#c13584); }
+.youtube { background: linear-gradient(135deg,#ff0000,#cc0000); }
+.linkedin { background: linear-gradient(135deg,#0077b5,#005983); }
+.facebook { background: linear-gradient(135deg,#1877f2,#145dbf); }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(34,197,94,.6); }
+  70% { box-shadow: 0 0 0 14px rgba(34,197,94,0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+  padding-top: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <img class="profile" src="https://scontent-del3-1.xx.fbcdn.net/v/t39.30808-6/229435930_3123172847916931_7399050728161061573_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ZaStw6wTsQwQ7kNvwGtYEK9&_nc_oc=AdmgW4o-zRsx6LWQuiaXDVo4CTi3OkWWYQNWIEYH5ImWohSyawCZJXZkns_ckPNx22Q&_nc_zt=23&_nc_ht=scontent-del3-1.xx&_nc_gid=1zWa0Vx6M8NmRe9n1IBi3Q&oh=00_AfsO0nKegYDy9llYfvnZmhys4QFFP-ptG8l6yh4i9F5c3A&oe=69854201"
+>
+  </div>
+
+  <div class="content">
+    <div class="name">K Sai Krishna</div>
+    <div class="role">Marketing Manager</div>
+    <div class="company">Corona Pharma Pvt. Ltd.</div>
+
+    <div class="section">Contact</div>
+    <div class="grid">
+      <a class="btn call" href="tel:+917207900631">📞 Call</a>
+      <a class="btn whatsapp" href="https://wa.me/917207900631">💬 WhatsApp</a>
+      <a class="btn email" href="mailto:krishnakotha076@gmail.com">✉️ Email</a>
+      <a class="btn save" href="contact.vcf">💾 Save Contact</a>
+
+    </div>
+
+    <div class="section">Business</div>
+    <div class="grid">
+      <a class="btn full" href="https://drive.google.com/">📂 Product Brochure</a>
+      <a class="btn full" href="https://maps.google.com/">📍 Visit Location</a>
+    </div>
+
+    <div class="section">Social</div>
+    <div class="grid">
+      <a class="btn instagram" href="#">📸 Instagram</a>
+      <a class="btn youtube" href="#">▶️ YouTube</a>
+      <a class="btn linkedin" href="#">💼 LinkedIn</a>
+      <a class="btn facebook" href="https://www.facebook.com/sai.krishna.433746">📘 Facebook</a>
+
+<a class="btn full" href="javascript:void(0)" onclick="downloadPDF()">
+  ⬇️ Download as PDF
+</a>
+
+    </div>
+
+    <div class="footer">
+      Scan QR • Save Contact • Connect Instantly
+    </div>
+  </div>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-YcsIPGdhPK4RzJc6Z5J5u0SIQz5jN5V6G8DkY5Z7s9n+1q5l0xZzYFZ7V5R4zUeF5tC1bFZrjz1B+f3z0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  function downloadPDF() {
+    const element = document.querySelector('.card');
+
+    const opt = {
+      margin:       0.3,
+      filename:     'Digital_Business_Card_Rahul_Verma.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2, useCORS: true },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
+  }
+</script>
+
+</body> 
+</html>
